@@ -1,3 +1,7 @@
+import React from 'react';
+import FeedbackWidget from 'components/FeedbackWidget/FeedbackWidget';
+import 'index.css';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +11,10 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <FeedbackWidget initialValue={0} />
     </div>
   );
 };
