@@ -1,0 +1,36 @@
+.feedbackBtnBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.feedbackBtn {
+  background-color: rgba(162, 162, 184, 0.678);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  font-size: 14px;
+  color: hsla(254, 87%, 3%, 0.892);
+}
+/* 
+.feedbackGoodBtn {
+  background-color: rgb(80, 255, 80);
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  color: blue;
+}
+.feedbackNeutralBtn {
+  background-color: rgb(255, 246, 80);
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  color: blue;
+}
+.feedbackBadBtn {
+  background-color: rgb(255, 112, 80);
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  color: blue;
+} */
