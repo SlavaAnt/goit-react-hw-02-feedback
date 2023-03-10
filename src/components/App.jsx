@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Section } from 'components/Section/Section';
-import { Statistics } from 'components/Section/Statistics/Statistics';
-// import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { FeedbackOptions } from 'components/Section/FeedbackOptions/FeedbackOptions';
+import { Section } from './Section/Section';
+import { Statistics } from './Statistics/Statistics';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import 'index.css';
 
 export class App extends Component {
@@ -36,10 +35,10 @@ export class App extends Component {
   //   });
   // };
 
-  feedback = evt => {
+  onSetFeedback = evt => {
     const { name } = evt.currentTarget;
-    console.log(evt);
-    console.log(name);
+    // console.log(evt);
+    // console.log(name);
 
     this.setState(prevState => {
       return { [name]: prevState[name] + 1 };
@@ -77,7 +76,7 @@ export class App extends Component {
           <FeedbackOptions
             options={Object.keys(this.state)}
             // options={['Good', 'Neutral', 'Bad']}
-            onLeaveFeedback={this.feedback}
+            onLeaveFeedback={this.onSetFeedback}
             // onLeaveFeedback={[
             //   this.goodFeedback,
             //   this.neutralFeedback,

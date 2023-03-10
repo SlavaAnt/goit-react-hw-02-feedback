@@ -10,7 +10,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className={css.feedbackBtnBox}>
       {options.map(option => {
-        console.log(option);
+        // console.log(option);
         return (
           <button
             key={option}
